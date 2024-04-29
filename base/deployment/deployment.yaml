@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: {{ .Values.name }}
-          image: docker.io/jmartinezblanco/{{ .Values.image }}
+          image: docker.io/jmartinezblanco/{{ .Values.name }}
           ports:
-            - containerPort: {{ .Values.port }}
+            - containerPort: 3000
